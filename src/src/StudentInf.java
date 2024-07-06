@@ -11,9 +11,16 @@ public class StudentInf {
         System.out.println("Please enter in which standard student want's to join");
         int standard = sc.nextInt();
 
+        System.out.println("Please enter the name of the student");
+        String name1 = sc.nextLine();
+        System.out.println("Please enter the address of the student");
+        String address1 = sc.nextLine();
+        System.out.println("Please enter in which standard student want's to join");
+        int standard1 = sc.nextInt();
+
         School schl = new School();
         schl.addStudent(name, address, standard);
-
+        schl.addStudent(name1, address1, standard1);
         schl.displayStudentsList();
 
 //        Student stu = new Student("Jaanu", 27, "Hassan" );
