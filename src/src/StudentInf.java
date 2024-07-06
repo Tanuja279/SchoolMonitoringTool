@@ -21,6 +21,7 @@ public class StudentInf {
         School schl = new School();
         schl.addStudent(name, address, standard);
         schl.addStudent(name1, address1, standard1);
+        schl.addStudent("Taapsi", "Kudurugundi", 3);
         schl.displayStudentsList();
 
 //        Student stu = new Student("Jaanu", 27, "Hassan" );
