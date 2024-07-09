@@ -5,7 +5,9 @@ public class Student {
         private int rollNum;
         private String address;
         static String teacher;
-
+        public void test(){
+            return ;
+        }
         public String getName(){
             return name;
         }
