@@ -49,5 +49,7 @@ public class Student {
             System.out.println("Teacher name : "+teacher);
         }
 
-
+        public void test(){
+            return ;
+        }
 }
