@@ -5,9 +5,7 @@ public class Student {
         private int rollNum;
         private String address;
         static String teacher;
-        public void test(){
-            return ;
-        }
+
         public String getName(){
             return name;
         }
@@ -49,7 +47,5 @@ public class Student {
             System.out.println("Teacher name : "+teacher);
         }
 
-        public String test(){
-            return "nothing" ;
-        }
+
 }
