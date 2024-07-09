@@ -22,17 +22,17 @@ public class School {
         }
     }
 
-    public void displayStudentsList(){
-        for(ClassRoom cr : this.classRoomsList){
-            System.out.println("Printing student list for classroom : "+cr.classRoom);
-//            for(Student st : cr.studentsList){
-//                st.display();
-//            }
-            cr.showStudentsList();
-
-        }
-
-    }
+//    public void displayStudentsList(){
+//        for(ClassRoom cr : this.classRoomsList){
+//            System.out.println("Printing student list for classroom : "+cr.classRoom);
+////            for(Student st : cr.studentsList){
+////                st.display();
+////            }
+//            cr.showStudentsList();
+//
+//        }
+//
+//    }
 
 
 }

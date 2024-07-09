@@ -1,6 +1,8 @@
 import java.util.Scanner;
 import Entities.ClassRoom;
 import Entities.*;
+import Services.SchoolService;
+import Services.SchoolServiceImpl;
 import Services.StudentService;
 import Services.StudentServiceImpl;
 
@@ -18,27 +20,16 @@ public class StudentInf {
         School schl = new School();
         Student stu = new Student(name, 1, address );
 
-        StudentService studentService = new StudentServiceImpl();
+
+        StudentService studentService= new StudentServiceImpl();
+        studentService.studentDetails(stu);
 
         studentService.registerStudent(schl, standard, stu);
 
-        schl.displayStudentsList();
-//        Student stu = new Student("Jaanu", 27, "Hassan" );
-//        //stu.display();
-//        String names[] = {"11","22","33","44","55","66"};
-//        //ArrayList<Students> students = new ArrayList<>();
-        //ClassRoom cr = new ClassRoom();
-//        int count = 1;
-//        for(String obj : names){
-//            //students.add(new Students(obj, count, "Hassan"));
-//            //System.out.println(obj);
-//            cr.addStudent(new Student(obj, count, "Hassan"));
-//            count++;
-//        }
-//        for(Students st : students){
-//            st.display();
-//        }
-        //cr.showStudentsList();
+        SchoolService schoolService = new SchoolServiceImpl();
+        schoolService.displayStudentList(schl);
+
+
 
 
     }

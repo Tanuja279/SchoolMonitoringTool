@@ -17,9 +17,9 @@ public class ClassRoom {
         this.studentsList.add(student);
     }
 
-    public void showStudentsList(){
-        for(Student stn : this.studentsList ){
-            stn.display();
-        }
-    }
+//    public void showStudentsList(){
+//        for(Student stn : this.studentsList ){
+//            stn.display();
+//        }
+//    }
 }
