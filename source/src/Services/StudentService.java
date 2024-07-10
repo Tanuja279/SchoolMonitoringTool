@@ -5,4 +5,6 @@ import Entities.Student;
 
 public interface StudentService {
     public void registerStudent(School school, Integer Classroom, Student student);
+    public void studentDetails(Student student);
 }
+

@@ -4,11 +4,27 @@ public class Student {
         private String name;
         private int rollNum;
         private String address;
-        static String teacher;
+        public static String teacher;
 
-        public String getName(){
+    static
+    {
+        teacher = "Ravi L S";
+    }
+
+    public Student(){
+
+    }
+
+    public Student(String name1, int rollNum1, String address1){
+        this.name = name1;
+        this.rollNum = rollNum1;
+        this.address = address1;
+    }
+
+    public String getName(){
             return name;
         }
+
         public void setName(String name){
             this.name = name;
         }
@@ -25,26 +41,6 @@ public class Student {
         }
         public void setAddress(String address){
             this.address = address;
-        }
-
-        public Student(){
-
-        }
-        public Student(String name1, int rollNum1, String address1){
-            this.name = name1;
-            this.rollNum = rollNum1;
-            this.address = address1;
-        }
-        static
-        {
-            teacher = "Ravi L S";
-        }
-
-        public void display(){
-            System.out.println("Name : "+this.name);
-            System.out.println("RollNumber : "+this.rollNum);
-            System.out.println("Address : "+this.address);
-            System.out.println("Teacher name : "+teacher);
         }
 
 
