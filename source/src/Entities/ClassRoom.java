@@ -1,25 +1,26 @@
 package Entities;
 
-import java.util.ArrayList;
+import java.util.*;
 
 public class ClassRoom {
-    //public Students student = new Students();
-    String classRoom;
+
+    private String standard;
+    private List<Student> studentsList = new ArrayList<>();
     public ClassRoom(){
 
     }
-    public ClassRoom(String classRoom){
-        this.classRoom = classRoom;
-    }
-    public ArrayList<Student> studentsList = new ArrayList<>();
 
-    public void addStudent(Student student){
-        this.studentsList.add(student);
+    public ClassRoom(String standard){
+        this.standard = standard;
     }
 
-//    public void showStudentsList(){
-//        for(Student stn : this.studentsList ){
-//            stn.display();
-//        }
-//    }
+    public String getStandard(){
+        return this.standard;
+    }
+    public void setStandard(String standard){
+        this.standard = standard;
+    }
+    public List<Student> getStudentList(){
+        return this.studentsList;
+    }
 }

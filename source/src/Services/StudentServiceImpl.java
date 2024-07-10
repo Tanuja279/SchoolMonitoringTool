@@ -5,10 +5,11 @@ import Entities.School;
 import Entities.Student;
 
 public class StudentServiceImpl implements StudentService {
+    ClassRoomService classRoomService = new ClassRoomServiceImpl();
     @Override
     public void registerStudent(School school, Integer Classroom, Student student) {
-        ClassRoom classroom = school.classRoomsList.get(Classroom-1);
-        classroom.addStudent(student);
+        ClassRoom classroom = school.getClassRoomsList().get(Classroom-1);
+        classRoomService.addStudentToClassRoom(classroom, student);
     }
     @Override
     public void studentDetails(Student student){
